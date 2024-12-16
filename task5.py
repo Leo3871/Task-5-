@@ -15,7 +15,7 @@ class Solution:
         for line in list_lines:
             if line:
                 value_line, key = line.rsplit(' ', 1)  # разделяем строчки на ключ и на координаты
-                values = value_line.strip('()').split(', ')
+                values = value_line.strip('()').split(', ')  # убираем ненужные штуки
                 my_values = []
                 for value in values:
                     float_value = float(value)
